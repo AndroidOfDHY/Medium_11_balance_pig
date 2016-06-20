@@ -1,0 +1,49 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="TextStyle">
+        <item name="android:textColor">#ff8811</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ItemStyle" parent="TextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ff0055</item>
+    </style>
+
+    <style name="ContentStyle" parent="TextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MoneyStyle" parent="TextStyle">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ScoreStyle" parent="TextStyle">
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="ReStyle" parent="ItemStyle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/zoom_enter</item>
+ <!-- 当前activity打开时，进入的activity的动画 -->
+        <item name="android:activityOpenExitAnimation">@null</item>
+ <!-- 当前activity打开时，退出的activity的动画 -->
+        <item name="android:activityCloseEnterAnimation">@null</item>
+ <!-- 当前activity关闭时，进入的activity的动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/zoom_exit</item>
+ <!-- 当前activity关闭时，退出的activity的动画 -->
+    </style>
+
+    <style name="ThemeActivity">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+</resources>

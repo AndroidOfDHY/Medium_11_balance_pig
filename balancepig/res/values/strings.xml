@@ -1,0 +1,59 @@
+<resources>
+
+    <string name="app_name">平衡猪</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_main">平衡猪</string>
+    <string name="quit">退出</string>
+    <string name="sure_quit">亲～你确定要退出吗？</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="charts">排行榜</string>
+    <string name="id">排行</string>
+    <string name="score">得分</string>
+    <string name="date">时间</string>
+    <string name="off">关闭</string>
+    <string name="on">打开</string>
+    <string name="music">音乐</string>
+    <string name="sound">音效</string>
+    <string name="refresh">~新记录!</string>
+    <string name="no_gold">金币不足！</string>
+    <string name="unlocked">已解锁，不需要再次购买</string>
+
+    <string-array name="contents">
+        <item>增加游戏时间10秒,CD10秒</item>
+        <item>保持平衡板不摆动5秒，CD30秒</item>
+        <item>30秒内复活，一局只能使用一次</item>
+        <item>30秒内复活，一局可使用多次，CD60秒</item>
+        <item>在30秒后会随机掉落红色金币，1红=5黄</item>
+        <item>在80秒后会随机掉落蓝色金币，1蓝=10黄</item>
+        <item>远古遗迹</item>
+        <item>泛舟湖上</item>
+        <item>遍地菊花</item>
+        <item>蝶戏万物</item>
+        <item>黄檀木上</item>
+        <item>温暖的周末</item>
+        <item>青葱岁月</item>
+        <item>夕阳西下</item>
+        <item>聚光灯下</item>
+        <item>小桥流水</item>
+    </string-array>
+    <string-array name="moneys">
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+    </string-array>
+
+</resources>

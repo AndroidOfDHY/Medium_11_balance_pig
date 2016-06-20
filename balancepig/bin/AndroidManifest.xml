@@ -1,0 +1,81 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pig"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/icon"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChartsActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".SelectActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".EndActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".BalanceActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ItemActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.TAuthView"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTask"
+            android:theme="@style/ThemeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="auth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AddShareView"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTask"
+            android:theme="@style/ThemeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tauth" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

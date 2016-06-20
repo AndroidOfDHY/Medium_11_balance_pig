@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/img_gold"
+        android:layout_width="44dip"
+        android:layout_height="44dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/img_time"
+        android:textColor="#FF3344"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="64dip"
+        android:layout_height="44dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#FF3344"
+        android:textSize="30sp"
+        tools:context=".BalanceActivity" />
+
+    <ImageView
+        android:id="@+id/img_time"
+        android:layout_width="54dip"
+        android:layout_height="44dip"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/score"
+        android:src="@drawable/gold"
+        android:textColor="#FF3344"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="44dip"
+        android:layout_height="54dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="42dp"
+        android:textColor="#FF3344"
+        android:textSize="30sp"
+        tools:context=".BalanceActivity" />
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_pause" />
+
+    <ImageView
+        android:id="@+id/img_scores"
+        android:layout_width="44dip"
+        android:layout_height="44dip"
+        android:layout_alignRight="@+id/img_time"
+        android:layout_below="@+id/img_time"
+        android:src="@drawable/scores"
+        android:textColor="#FF3344"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/scores"
+        android:layout_width="64dip"
+        android:layout_height="44dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/img_scores"
+        android:textColor="#FF3344"
+        android:textSize="15sp"
+        tools:context=".BalanceActivity" />
+
+    <TextView
+        android:id="@+id/num_t"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignLeft="@+id/num_g"
+        android:layout_alignTop="@+id/prop_time"
+        android:textColor="#FF3344"
+        android:textSize="25sp"
+        tools:context=".BalanceActivity" />
+
+    <TextView
+        android:id="@+id/num_live"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignLeft="@+id/scores"
+        android:layout_alignTop="@+id/prop_live"
+        android:layout_marginLeft="5dip"
+        android:textColor="#FF3344"
+        android:textSize="25sp"
+        tools:context=".BalanceActivity" />
+
+    <ImageButton
+        android:id="@+id/prop_lives"
+        android:layout_width="50dip"
+        android:layout_height="40dip"
+        android:layout_alignLeft="@+id/prop_live"
+        android:layout_alignTop="@+id/num_t"
+        android:background="@drawable/big_wing"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/num_lives"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignLeft="@+id/num_live"
+        android:layout_alignTop="@+id/prop_lives"
+        android:textColor="#FF3344"
+        android:textSize="25sp"
+        tools:context=".BalanceActivity" />
+
+    <ImageButton
+        android:id="@+id/prop_time"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignLeft="@+id/prop_g"
+        android:layout_below="@+id/prop_g"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/add_time"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/prop_live"
+        android:layout_width="50dip"
+        android:layout_height="40dip"
+        android:layout_above="@+id/prop_time"
+        android:layout_alignRight="@+id/img_scores"
+        android:background="@drawable/small_wing"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/prop_g"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignRight="@+id/time"
+        android:layout_below="@+id/img_scores"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/stop"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/num_g"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_above="@+id/prop_time"
+        android:layout_alignRight="@+id/time"
+        android:layout_marginLeft="5dip"
+        android:textColor="#FF3344"
+        android:textSize="25sp"
+        tools:context=".BalanceActivity" />
+
+    <ImageView
+        android:id="@+id/img_count"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/count"
+        tools:ignore="ContentDescription" />
+
+    <ProgressBar
+        android:id="@+id/progress_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/time"
+        android:layout_below="@+id/img_scores"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="22dp"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/dialog_style_xml_color"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prop_g"
+        android:layout_below="@+id/prop_g"
+        android:layout_marginTop="37dp"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/dialog_style_xml_color"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prop_time"
+        android:layout_alignRight="@+id/img_scores"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/dialog_style_xml_color"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress_lives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prop_live"
+        android:layout_alignTop="@+id/num_t"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/dialog_style_xml_color"
+        android:visibility="gone" />
+
+</RelativeLayout>

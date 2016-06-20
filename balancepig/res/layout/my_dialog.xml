@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/dialog_exit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/exit_game" />
+
+    <ImageButton
+        android:id="@+id/dialog_continue"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="168dp"
+        android:src="@drawable/btn_continue"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/dialog_restart"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/dialog_continue"
+        android:layout_marginLeft="53dp"
+        android:layout_toRightOf="@+id/dialog_continue"
+        android:src="@drawable/btn_restart"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
